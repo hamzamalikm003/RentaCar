@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCar">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
+        android:text="Add Item to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <EditText
+        android:id="@+id/car_name"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_corner_view"
+        android:ems="10"
+        android:hint="Car Name"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/car_price"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_corner_view"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_name"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/car_desc"
+        android:layout_width="306dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="Decription"
+        android:inputType="textPersonName"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_price"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_corner_view"
+        android:text="add"
+        android:backgroundTint="#5D3FD3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <CheckBox
+        android:id="@+id/car"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/black"
+        android:text="Car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_desc"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <CheckBox
+        android:id="@+id/truck"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:buttonTint="@color/black"
+        android:text="Truck"
+        android:textColorHighlight="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/bus"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/car"
+        app:layout_constraintTop_toBottomOf="@+id/car_desc" />
+
+    <CheckBox
+        android:id="@+id/bus"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:buttonTint="@color/black"
+        android:text="Bus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_desc"
+        app:layout_constraintVertical_bias="0.092" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
