@@ -42,9 +42,6 @@ public class Place_Order extends AppCompatActivity {
         setContentView(R.layout.activity_place_order);
 
 
-
-
-
         ordernum_view = findViewById(R.id.orderNum_TV);
         totalprice_view = findViewById(R.id.ordPrice_TV);
         orderbtn = findViewById(R.id.Ord_btn);
