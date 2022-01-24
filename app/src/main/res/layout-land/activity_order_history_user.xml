@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/orderHistory_TV_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="219dp"
+        android:layout_height="112dp"
         android:layout_marginTop="39dp"
         android:layout_marginBottom="583dp"
         android:text="Order History:"
@@ -24,20 +24,22 @@
 
     <ScrollView
         android:id="@+id/orderHistory_user_SV"
-        android:layout_width="287dp"
-        android:layout_height="373dp"
+        android:layout_width="212dp"
+        android:layout_height="307dp"
         android:fillViewport="true"
-        tools:layout_editor_absoluteX="222dp">
+        tools:layout_editor_absoluteX="297dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="visible">
 
             <ListView
                 android:id="@+id/listView_order_history"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:visibility="visible" />
         </LinearLayout>
     </ScrollView>
 
