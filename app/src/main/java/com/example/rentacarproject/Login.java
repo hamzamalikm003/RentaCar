@@ -83,13 +83,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                                public void onDataChange(DataSnapshot dataSnapshot) {
                                    owner = dataSnapshot.child(UID).child("owner").getValue().toString();
 
-                                   if (owner.equals("admin")) {
-                                       Intent k = new Intent(Login.this, Login.class);
-                                       startActivity(k);
-                                       finish();
-                                   }
 
-                                   else if (owner.equals("no")) {
+
+                                    if (owner.equals("no")) {
                                        Intent i = new Intent(Login.this, User_Home.class);
                                        startActivity(i);
                                        finish();
